@@ -1,0 +1,21 @@
+group 'cn.usmile365.active'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    maven {url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.apache.ant/ant
+    compile (group: 'org.apache.ant', name: 'ant', version: '1.9.4')
+//    testCompile group: 'junit', name: 'junit', version: '4.12'
+//    compile files(dir:'/Users/jacobzhao/camps-projects/antkits/out/artifacts/antkit/antkit.jar')
+//    compile fileTree(dir:'/Users/jacobzhao/camps-projects/buildtools/ant/lib', include:['*.jar'])
+}
